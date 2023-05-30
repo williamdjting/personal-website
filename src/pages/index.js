@@ -23,7 +23,7 @@ const pageStyles = {
 const headingStyles = {
   marginTop: 20,
   marginBottom: 64,
-  maxWidth: 320,
+  maxWidth: 720,
 }
 const headingAccentStyles = {
   color: "#663399",
@@ -174,9 +174,9 @@ const IndexPage = () => {
       <ToggleShowSplittr/> */}
 
       <h1 style={headingStyles}>
-        William Ting
+        William Ting — A Full Stack Web Developer
         <br />
-        <span style={headingAccentStyles}>— Full Stack Web Developer</span>
+        <span style={headingAccentStyles}>— Building Modern Web Interfaces</span>
       </h1>
       
       <p style={docLinkStyle}>
@@ -217,11 +217,11 @@ const IndexPage = () => {
                 
               </a>
               
-              {link.badge && (
+              {/* {link.badge && (
                 <span style={badgeStyle} aria-label="New Badge">
                   NEW!
                 </span>
-              )}
+              )} */}
               <p style={descriptionStyle}>{link.description}</p>
               <p style={descriptionStyle}>
               {link.component && <link.component />}

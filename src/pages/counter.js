@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 
+// deprecated
+
 const linkStyle = {
   color: "#8954A8",
   fontWeight: "bold",

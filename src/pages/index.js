@@ -26,7 +26,7 @@ const pageStyles = {
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
 const headingStyles = {
-  marginTop: 0,
+  marginTop: 20,
   marginBottom: 64,
   maxWidth: 320,
 }
@@ -110,29 +110,50 @@ const badgeStyle = {
 }
 
 const links = [
+  // {
+  //   text: "FoodTree: LinkTree for Food Ordering",
+  //   url: "https://github.com/williamdjting/FoodTree",
+  //   description:
+  //     "A full stack web application built with React / Node / Express / PostGreSQL to provide small homes businesses with a platform to display their menu and accept online orders",
+  //   color: "#BC027F",
+  //   // path: "../images/apple-test.jpeg",
+  // },
+  // {
+  //   text: "Splittr: 276 Course Project",
+  //   url: "https://github.com/williamdjting/276-finalproject",
+  //   description:
+  //     "A full stack web application built with React / Node / Express / PostGreSQL to provide students with a platform to split bills and send / request money payments using Stripe API",
+  //   color: "#E95800",
+  //   // path: "appleImg",
+  // },
+  // {
+  //   text: "GroupStock: 372 Course Project",
+  //   url: "https://github.com/williamdjting/372-finalproject",
+  //   description:
+  //     "A full stack web application built with React / Node / Express / MongoDB to allow stock traders to create collaborative personal and group stock watchlists using external Finance API",
+  //   color: "#1099A8",
+  //   // path: "../images/apple-test.jpeg",
+  // },
+
   {
     text: "FoodTree: LinkTree for Food Ordering",
+    component: ToggleShowFoodTree,
     url: "https://github.com/williamdjting/FoodTree",
-    description:
-      "A full stack web application built with React / Node / Express / PostGreSQL to provide small homes businesses with a platform to display their menu and accept online orders",
     color: "#BC027F",
-    // path: "../images/apple-test.jpeg",
-  },
-  {
-    text: "Splittr: 276 Course Project",
-    url: "https://github.com/williamdjting/276-finalproject",
-    description:
-      "A full stack web application built with React / Node / Express / PostGreSQL to provide students with a platform to split bills and send / request money payments using Stripe API",
-    color: "#E95800",
-    path: "appleImg",
   },
   {
     text: "GroupStock: 372 Course Project",
+    component: ToggleShowGroupStock,
     url: "https://github.com/williamdjting/372-finalproject",
-    description:
-      "A full stack web application built with React / Node / Express / MongoDB to allow stock traders to create collaborative personal and group stock watchlists using external Finance API",
+
+    color: "#E95800",
+  },
+  {
+    text: "Splittr: 276 Course Project",
+    component: ToggleShowSplittr,
+    url: "https://github.com/williamdjting/276-finalproject",
+
     color: "#1099A8",
-    path: "../images/apple-test.jpeg",
   },
 
 ]
@@ -151,10 +172,10 @@ const IndexPage = () => {
     <main style={pageStyles}>
       {/* <div>{images}</div>  */}
       
-      <ToggleShow/>
+      {/* <ToggleShow/>
       <ToggleShowFoodTree/>
       <ToggleShowGroupStock />
-      <ToggleShowSplittr/>
+      <ToggleShowSplittr/> */}
 
       <h1 style={headingStyles}>
         William Ting
@@ -207,6 +228,9 @@ const IndexPage = () => {
                 </span>
               )}
               <p style={descriptionStyle}>{link.description}</p>
+              <p style={descriptionStyle}>
+              {link.component && <link.component />}
+              </p>    
             </span>
           </li>
         ))}

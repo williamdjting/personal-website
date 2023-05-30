@@ -18,10 +18,13 @@ export default function ToggleShow() {
     setIsShow(!isShow);
   };
 
+
+  // test
   if (isShow) {
 
     return (
     <>
+    
       <Counter/>
       <button onClick={handleClick}>Toggle</button>
     </>

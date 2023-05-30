@@ -1,6 +1,11 @@
 import * as React from "react";
 import Counter from "./counter";
 import ToggleShow from "./toggleShow";
+import ToggleShowFoodTree from "./toggleShow-FoodTree";
+import ToggleShowGroupStock from "./toggleShow-GroupStock";
+import ToggleShowSplittr from "./toggleShow-Splittr";
+
+
 
 // import { StaticImage } from "gatsby-plugin-image";
 // import appleImg from "../images/apple-test.jpeg";
@@ -11,6 +16,8 @@ import ToggleShow from "./toggleShow";
 // const images = imgArray.map( anImg => {
 //     return < img key={anImg} src={`../images/${anImg}.jpeg`} alt="anImg" />
 //   });
+
+const descriptionArray = [ToggleShowFoodTree, ToggleShowGroupStock, ToggleShowSplittr ]
 
 
 const pageStyles = {
@@ -145,6 +152,9 @@ const IndexPage = () => {
       {/* <div>{images}</div>  */}
       
       <ToggleShow/>
+      <ToggleShowFoodTree/>
+      <ToggleShowGroupStock />
+      <ToggleShowSplittr/>
 
       <h1 style={headingStyles}>
         William Ting

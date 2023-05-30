@@ -13,6 +13,10 @@ const linkStyle = {
 
 export default function ToggleShowFoodTree() {
   const [isShow, setIsShow] = React.useState(true);
+  const [showText, setShowText] = React.useState("Show Less");
+
+
+
 
   const handleClick = () => {
     setIsShow(!isShow);
@@ -26,7 +30,7 @@ export default function ToggleShowFoodTree() {
     <>
         <p>A full stack web application built with React / Node / Express / PostGreSQL to provide small homes businesses with a platform to display their menu and accept online orders.</p>
       {/* <Counter/> */}
-      <button onClick={handleClick}>Show More</button>
+      <button onClick={handleClick}>{showText}</button>
     </>
   );
 

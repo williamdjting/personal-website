@@ -13,6 +13,8 @@ const linkStyle = {
 
 export default function ToggleShowGroupStock() {
   const [isShow, setIsShow] = React.useState(true);
+  const [showText, setShowText] = React.useState("Show Less");
+
 
   const handleClick = () => {
     setIsShow(!isShow);
@@ -26,7 +28,7 @@ export default function ToggleShowGroupStock() {
     <>
         <p>A full stack web application built with React / Node / Express / MongoDB to allow stock traders to create collaborative personal and group stock watchlists using external Finance API.</p>
       {/* <Counter/> */}
-      <button onClick={handleClick}>Show More</button>
+      <button onClick={handleClick}>{showText}</button>
     </>
   );
 

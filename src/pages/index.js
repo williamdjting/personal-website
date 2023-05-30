@@ -1,6 +1,4 @@
 import * as React from "react";
-import Counter from "./counter";
-import ToggleShow from "./toggleShow";
 import ToggleShowFoodTree from "./toggleShow-FoodTree";
 import ToggleShowGroupStock from "./toggleShow-GroupStock";
 import ToggleShowSplittr from "./toggleShow-Splittr";
@@ -16,9 +14,6 @@ import ToggleShowSplittr from "./toggleShow-Splittr";
 // const images = imgArray.map( anImg => {
 //     return < img key={anImg} src={`../images/${anImg}.jpeg`} alt="anImg" />
 //   });
-
-const descriptionArray = [ToggleShowFoodTree, ToggleShowGroupStock, ToggleShowSplittr ]
-
 
 const pageStyles = {
   color: "#232129",
@@ -71,6 +66,7 @@ const docLinkStyle2 = {
   ...linkStyle,
   listStyleType: "none",
   marginBottom: 0,
+  textDecoration: "underline", // Added underline text decoration
 }
 
 const descriptionStyle = {
@@ -184,8 +180,7 @@ const IndexPage = () => {
       </h1>
       
       <p style={docLinkStyle}>
-        {/* Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time. 😎 */}
+
         <p>LANGUAGES: Javascript, HTML, CSS, ReactJS, NodeJS, ExpressJS, SQL, C/C++, JSX, JSON, R</p>
         
         <p>APPLICATIONS: REST API, PostGreSQL, MongoDB, GatsbyJS, GraphQL, Docker, Mocha/Chai, Ubuntu, Figma</p>

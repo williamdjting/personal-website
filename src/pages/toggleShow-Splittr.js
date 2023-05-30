@@ -13,6 +13,7 @@ const linkStyle = {
 
 export default function ToggleShowSplittr() {
   const [isShow, setIsShow] = React.useState(true);
+  const [showText, setShowText] = React.useState("Show Less");
 
   const handleClick = () => {
     setIsShow(!isShow);
@@ -26,7 +27,7 @@ export default function ToggleShowSplittr() {
     <>
         <p>A full stack web application built with React / Node / Express / PostGreSQL to provide students with a platform to split bills and send / request money payments using Stripe API.</p>
       {/* <Counter/> */}
-      <button onClick={handleClick}>Show More</button>
+      <button onClick={handleClick}>{showText}</button>
     </>
   );
 

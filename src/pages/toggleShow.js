@@ -24,8 +24,10 @@ export default function ToggleShow() {
 
     return (
     <>
-    
-      <Counter/>
+        <p>LANGUAGES: Javascript, HTML, CSS, ReactJS, NodeJS, ExpressJS, SQL, C/C++, JSX, JSON, R</p>
+        
+        <p>APPLICATIONS: REST API, PostGreSQL, MongoDB, GatsbyJS, GraphQL, Docker, Mocha/Chai, Ubuntu, Figma</p>
+      {/* <Counter/> */}
       <button onClick={handleClick}>Toggle</button>
     </>
   );

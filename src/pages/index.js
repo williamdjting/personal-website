@@ -1,4 +1,5 @@
 import * as React from "react";
+import Counter from "./counter";
 
 // import { StaticImage } from "gatsby-plugin-image";
 // import appleImg from "../images/apple-test.jpeg";
@@ -9,6 +10,8 @@ import * as React from "react";
 // const images = imgArray.map( anImg => {
 //     return < img key={anImg} src={`../images/${anImg}.jpeg`} alt="anImg" />
 //   });
+
+
 
 const pageStyles = {
   color: "#232129",
@@ -57,6 +60,12 @@ const docLinkStyle = {
   marginBottom: 36,
 }
 
+const docLinkStyle2 = {
+  ...linkStyle,
+  listStyleType: "none",
+  marginBottom: 0,
+}
+
 const descriptionStyle = {
   color: "#232129",
   fontSize: 14,
@@ -69,6 +78,11 @@ const docLink = {
   text: "My Github",
   url: "https://github.com/williamdjting",
   
+  color: "#8954A8",
+}
+
+const projectTitle = {
+  text: "My Project",
   color: "#8954A8",
 }
 
@@ -129,6 +143,8 @@ const IndexPage = () => {
     
     <main style={pageStyles}>
       {/* <div>{images}</div>  */}
+      
+      <Counter />
 
       <h1 style={headingStyles}>
         William Ting
@@ -136,7 +152,7 @@ const IndexPage = () => {
         <span style={headingAccentStyles}>— Full Stack Web Developer</span>
       </h1>
       
-      <p style={paragraphStyles}>
+      <p style={docLinkStyle}>
         {/* Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
         update in real-time. 😎 */}
         <p>LANGUAGES: Javascript, HTML, CSS, ReactJS, NodeJS, ExpressJS, SQL, C/C++, JSX, JSON, R</p>
@@ -154,6 +170,10 @@ const IndexPage = () => {
           >
             {docLink.text}
           </a>
+        </li>
+
+        <li style={docLinkStyle2} >
+          <p>My Projects</p>
         </li>
         
         {links.map(link => (

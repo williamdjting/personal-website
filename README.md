@@ -5,12 +5,14 @@ Made with Gatsby.JS and deployed on Netlify.
 
 
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+<!--   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
+    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" /> -->
   </a>
 </p>
 <h1 align="center">
-  Gatsby Minimal Starter
+  William Ting's Personal Website to showcase my portfolio!
+
+Made with Gatsby.JS and deployed on Netlify.
 </h1>
 
 ## 🚀 Quick start

@@ -1,5 +1,6 @@
 import * as React from "react";
 import Counter from "./counter";
+import ToggleShow from "./toggleShow";
 
 // import { StaticImage } from "gatsby-plugin-image";
 // import appleImg from "../images/apple-test.jpeg";
@@ -10,7 +11,6 @@ import Counter from "./counter";
 // const images = imgArray.map( anImg => {
 //     return < img key={anImg} src={`../images/${anImg}.jpeg`} alt="anImg" />
 //   });
-
 
 
 const pageStyles = {
@@ -144,7 +144,7 @@ const IndexPage = () => {
     <main style={pageStyles}>
       {/* <div>{images}</div>  */}
       
-      <Counter />
+      <ToggleShow/>
 
       <h1 style={headingStyles}>
         William Ting

@@ -18,14 +18,15 @@ export default function Counter() {
   }
 
   return (
-
+    <>
+    <h1>Counter is at: {counter}</h1>
     <button 
     onClick={handleClick}
     style={linkStyle}
     >
-      Press me! {counter} times!
+      Press me!
     </button>
-
+    </>
     
   );
 }
